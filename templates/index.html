@@ -8,8 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -35,10 +34,38 @@
 											<p><span>About:</span> In this project we apply a Machine Learning
 												algorithm, Decision Tree to the Car Evaluation Dataset from <u><a
 														href="https://www.kaggle.com/elikplim/car-evaluation-data-set">Kaggle.</a></u><br />
-												The model predicts the class of the vehicle, the output being one out of four categories: 'unacc', 'acc', 'vgood' and 'good'.<br />
+												The model predicts the class of the vehicle, the output being one out of
+												four categories: 'unacc', 'acc', 'vgood' and 'good'.<br />
 												Go ahead, fill in the details of the form to see the results!
 											</p>
-											<b><h1 style="color:white"><div id="theClass"></div></h1></b>
+
+										</div>
+									</div>
+									<div class="dbox w-100 d-flex align-items-start">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-github"></span>
+										</div>
+										<div class="text pl-4">
+											<p><span>Code:</span> The code to this project can be found on <u><a
+														href="https://github.com/manas-v/deploy-ML-model-with-Django">Github.</a></u>
+												So what are you waiting for, give your own ML model an interface too!
+											</p>
+
+										</div>
+									</div>
+									<div class="dbox w-100 d-flex align-items-start">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-certificate"></span>
+										</div>
+										<div class="text pl-4">
+											<p><span>Result:</span> The quality of you car is
+												<b>
+													<h1 style="color:white">
+														<div id="theClass"></div>
+													</h1>
+												</b>
+											</p>
+
 										</div>
 									</div>
 								</div>
@@ -114,7 +141,7 @@
 											</div>
 											<div id="form-message-warning" class="mb-4"></div>
 											<div id="form-message-success" class="mb-4">
-												The details were sent, thank you!
+												Calculating!
 											</div>
 										</div>
 									</form>
