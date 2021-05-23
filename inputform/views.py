@@ -31,7 +31,7 @@ def predict(request):
     df = df.reshape(1,-1)
 
     predictions = loaded_model.predict(df)
-    class_dict = {'2':'unacc', '0':'acc', '3':'vgood', '1':'good'}
+    class_dict = {'2':'Unacceptable', '0':'Acceptable', '3':'Very good', '1':'Good'}
     output = class_dict[str(predictions[0])]
     print(output)
     msg = {'response': 'OK', 'class': output}
